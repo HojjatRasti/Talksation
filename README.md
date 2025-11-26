@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Talksation | Interactive Online Sessions Platform
+=======================================
 
-## Getting Started
+### Built with Next.js - Vapi - Clerk - Supabase
 
-First, run the development server:
+A full-stack web application for hosting **interactive online sessions** on specific topics, where users can:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+✅ Sign up / log in using **Clerk**\
+✅ Join real-time interactive sessions powered by **Vapi** (voice/chat AI)\
+✅ Access premium features through **subscriptions** stored and managed via **Supabase**\
+✅ Experience a smooth Next.js App Router architecture
+
+* * * * *
+
+🚀 Features
+-----------
+
+-   User authentication (Clerk)
+
+-   Create and join live interactive sessions
+
+-   Real-time AI interaction using Vapi (voice or text)
+
+-   Subscription system (Supabase backend + Stripe integration)
+
+-   Dashboard for session management
+
+-   Secure API routes with role-based access
+
+-   Responsive UI
+
+* * * * *
+
+🧱 Tech Stack
+-------------
+
+-   **Frontend:** Next.js 14 (App Router, Server Components)
+
+-   **Auth:** Clerk
+
+-   **Database:** Supabase (PostgreSQL + Auth sync)
+
+-   **AI / Interaction:** Vapi API
+
+-   **Payments / Subscription:** Supabase + Stripe integration
+
+-   **Deployment:** Vercel / Supabase Hosting
+
+* * * * *
+
+🧰 Requirements
+---------------
+
+-   Node.js 18+
+
+-   Supabase project
+
+-   Clerk project
+
+-   Vapi API Key
+
+-   Stripe (optional for subscription)
+
+* * * * *
+
+🔧 Installation
+---------------
+```
+git clone https://github.com/your-username/your-project.git
+cd your-project
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+⚙️ Environment Variables
+------------------------
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file:
 
-## Learn More
+`NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-To learn more about Next.js, take a look at the following resources:
+NEXT_PUBLIC_SUPABASE_URL=
+SUPABASE_SERVICE_ROLE_KEY=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+VAPI_API_KEY=
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=`
 
-## Deploy on Vercel
+* * * * *
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+▶️ Run Locally
+--------------
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`npm run dev`
+
+Open:\
+`http://localhost:3000`
+
+* * * * *
+📷 Snapshots
+---------
+
+
+* * * * *
+
+⭐ Support
+---------
+
+If you like this project, consider giving it a star ⭐ on GitHub!
